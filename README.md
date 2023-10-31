@@ -8,7 +8,7 @@ Java環境： openjdk version "21.0.1" 2023-10-17
 
 またこのプロジェクトはVSCodeで作成しておりますので`.vscode`ファイルは配置しております。
 
-利用Extension: Extension Pack for Java
+利用しているVSCOde Extension: Extension Pack for Java
 
 ## Practice1
 
