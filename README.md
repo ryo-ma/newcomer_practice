@@ -4,9 +4,11 @@
 
 以下の環境で作成しましたがバージョンによって大きく影響を与えるような課題にはしないつもりです。
 
-Java環境：openjdk version "21.0.1" 2023-10-17
+Java環境： openjdk version "21.0.1" 2023-10-17
 
 またこのプロジェクトはVSCodeで作成しておりますので`.vscode`ファイルは配置しております。
+
+利用Extension: Extension Pack for Java
 
 ## Practice1
 
