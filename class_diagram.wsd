@@ -1,0 +1,24 @@
+@startuml practice1
+abstract class Engineer {
+    - name: String;
+    {abstract} + design(): void;
+    {abstract} + implement(): void;
+    {abstract} + test(): void;
+    + work(): void;
+}
+class BackendEngineer {
+    - name: String;
+    + design(): void;
+    + implement(): void;
+    + test(): void;
+}
+class FrontendEngineer {
+    - name: String;
+    + design(): void;
+    + implement(): void;
+    + test(): void;
+}
+
+Engineer <|-- BackendEngineer
+Engineer <|-- FrontendEngineer
+@enduml
