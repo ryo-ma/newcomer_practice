@@ -45,6 +45,10 @@ Java環境： openjdk version "21.0.1" 2023-10-17
   * 赤の□はアクセスレベルのprivateです
   * 緑の●はアクセスレベルのpublicです
 
+クラス図
+<img width="350" src="https://github.com/ryo-ma/newcomer_practice/assets/6661165/fc530808-d25a-4c86-b0a8-f7320b86273f">
+
+
 期待する出力結果
 
 ```
