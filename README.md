@@ -99,6 +99,6 @@ Jestを使ってテストをします
 
 1. `src/practice1`以下のファイルを`src/parctice2`へコピーする
 2. `src/practice2/BackendEngineer.java`、`src/practice2/FrontendEngineer.java`、`src/practice2/Engineer.java`、`src/practice2/App.java`の最初の行`package practice1;`から`package practice2;`に変更する
-3. `src/practice2/BackendEngineer.java`、`src/practice2/FrontendEngineer.java`、`src/practice2/Engineer.java`からコンストラクタを消す
+3. `src/practice2/Engineer.java`からコンストラクタを消す
 4. `src/practice2/Engineer.java`から`private String name;`を消す
 5. 各種ファイルを変更して実装する(App.javaは修正しません)
