@@ -66,3 +66,39 @@ Jestを使ってテストをします
 
 全ての仕事が完了しました
 ```
+
+## Practice2
+
+### 事前準備
+
+git pullをして最新版を取得してください。
+
+### 演習
+
+コンストラクタを使わずに子クラス(BackendEngineer、FrontendEngineer)から親クラス(Engineer)へ`name`を渡せるようにして期待通りの出力結果を出してください。
+
+期待する出力結果
+
+```
+田中：仕事を開始します
+バックエンドの構成を設計します
+Djangoを使って実装します
+pytestを使ってテストをします
+田中：仕事が完了しました
+
+鈴木：仕事を開始します
+画面設計をします
+NextJSを使って実装をします
+Jestを使ってテストをします
+鈴木：仕事が完了しました
+
+全ての仕事が完了しました
+```
+
+#### 事前手順
+
+1. `src/practice1`以下のファイルを`src/parctice2`へコピーする
+2. `src/practice2/BackendEngineer.java`、`src/practice2/FrontendEngineer.java`、`src/practice2/Engineer.java`、`src/practice2/App.java`の最初の行`package practice1;`から`package practice2;`に変更する
+3. `src/practice2/BackendEngineer.java`、`src/practice2/FrontendEngineer.java`、`src/practice2/Engineer.java`からコンストラクタを消す
+4. `src/practice2/Engineer.java`から`private String name;`を消す
+5. 各種ファイルを変更して実装する(App.javaは修正しません)
