@@ -1,0 +1,77 @@
+@startuml practice3
+enum Skill {
+    BACKEND_DEVELOPMENT,
+    FRONTEND_DEVELOPMENT,
+    WEB_DESIGN,
+    ARCHITECT,
+    MANAGEMENT,
+}
+interface Employee {
+    + getName(): String;
+    + getSkills(): List<Skill>;
+}
+class Member {
+    - name: String;
+    - skills: List<Skill>;
+    + Member(name: String, skills: Skill[]);
+    + getName(): String;
+    + getSkills(): List<Skill>;
+    + executeTask(task: String, function: Function<String, String>): String;
+}
+class Manager {
+    - name: String;
+    - skills: List<Skill>;
+    + Manager(name: String, skills: Skill[]);
+    + getName(): String;
+    + getSkills(): List<Skill>;
+    + plan(requirement: String): String[];
+    + check(artifact: String): boolean;
+}
+interface Team {
+    + add(employee: Employee): boolean;
+    + remove(employee: Employee): boolean;
+    + getEmployeesBySkill(skill: Skill): List<Employee>;
+    + develop(requirement: String): String;
+}
+class BackendTeam {
+    - employeeList: List<Employee>;
+    + add(employee: Employee): boolean;
+    + remove(employee: Employee): boolean;
+    + getEmployeesBySkill(skill: Skill): List<Employee>;
+    + develop(requirement: String): String;
+}
+class FrontendTeam {
+    - employeeList: List<Employee>;
+    + add(employee: Employee): boolean;
+    + remove(employee: Employee): boolean;
+    + getEmployeesBySkill(skill: Skill): List<Employee>;
+    + develop(requirement: String): String;
+}
+
+class Artifact {
+    - title: String;
+    - body: String;
+    - auther: String;
+    - isSuccess: boolean;
+
+}
+class Requirement {
+    - title: String;
+    - body: String;
+    - type: String;
+}
+class Task {
+    - title: String;
+    - body: String;
+    - requireSkill: Skill;
+    - isFinished: boolean;
+}
+Employee <|-down- Member
+Employee <|-down- Manager
+Team <|-down- BackendTeam
+Team <|-down- FrontendTeam
+BackendTeam "1" o-left- "*" Employee 
+FrontendTeam "1" o-left- "*" Employee 
+Member "1" o-left- "*" Skill 
+Manager "1" o-left- "*" Skill 
+@enduml

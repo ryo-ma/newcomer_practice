@@ -1,2 +1,2 @@
-bin/*/*.class
+bin/*/*
 .DS_Store
